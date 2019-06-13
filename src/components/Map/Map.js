@@ -52,7 +52,7 @@ class Map extends Component {
             <GoogleMapReact
                 // Yo. This is my key. You need your own. This key will not work on your app.
                 // See above tutorial link!
-                bootstrapURLKeys={{ key: 'AIzaSyAiR0Vq540M-MjpanJ_0ZpnktXqvjFIflk' }}
+                bootstrapURLKeys={{ key: process.env.GOOGLE_API }}
                 defaultCenter={this.props.center}
                 defaultZoom={this.props.zoom}
             >
